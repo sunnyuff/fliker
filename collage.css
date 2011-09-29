@@ -1,0 +1,66 @@
+.wrapper{
+    border: 2px solid #EEE;
+    padding: 5px;
+    position: absolute;
+    background-color: #fff; 
+    
+    -webkit-transition: all 1s ease-in;                
+    -webkit-transition: scale 2s ease-in;                
+    
+    -webkit-box-shadow: #EEE 0px 0px 10px;
+    
+    opacity: 0;
+    
+    -webkit-transform: scale(4);
+}
+.final{
+    -webkit-transform: rotate(20deg) scale(1) translate(40px, 0);
+    opacity: 1.0;
+}
+.wrapper .title{
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wrapper .image{
+
+}
+
+#hud{
+    -webkit-box-shadow: #EEE 0px 0px 11px 4px;
+    background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.13, #D1CDD1), color-stop(0.85, #C4BCC4));
+    height: 54px;
+    -webkit-transition: all 0.5s ease-in;
+    -webkit-transform: translate(0, -100px);
+}
+
+.hudShow{
+    -webkit-transform: translate(0, 0) !important;
+}
+
+#hud #message{
+    text-align: center;
+    font-family: monospace;
+}
+#hud #progress{
+    -webkit-transition: all 0.5s ease-in;
+    opacity: 0;
+    height: 20px;
+    width: 300px;
+    border: 1px solid #999;
+    position: relative;
+    top: 50%;
+    margin-top: -22px;
+    left: 50%;
+    margin-left: -150px;
+    overflow: hidden;
+}
+
+#hud #progress #bar{
+    height: 100%;
+    width: 100%;
+    background: red;
+    -webkit-transition: all 0.5s ease-in;
+}
